@@ -57,7 +57,7 @@ Fields:
 
 ## How to run
 
-## Tests
+### Tests
 
 ```powershell
 $env:PYTHONPATH="src"
