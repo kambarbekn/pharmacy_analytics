@@ -55,8 +55,25 @@ Fields:
 - ndc
 - most_prescribed_quantity: list of quantities
 
-## How to run (placeholder)
-TODO
+## How to run
 
-## Assumptions (placeholder)
-TODO
+## Tests
+
+```powershell
+$env:PYTHONPATH="src"
+python -m pytest -q
+
+### Prerequisites
+- Python 3.10+ (tested on Windows)
+- Git
+
+### Install dependencies
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+## Execute command
+
+$env:PYTHONPATH="src"
+python -m app.cli --pharmacy-dirs data\pharmacies --claims-dirs data\claims --reverts-dirs data\reverts --output-dir outputs
